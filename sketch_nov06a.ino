@@ -3,7 +3,7 @@
 #include <AltSoftSerial.h>
 #include <TinyGPS++.h> 
 
-const String PHONE = "+8801973421167";
+const String PHONE = "+88019xxxxxxxx";
 //GSM Module RX pin to Arduino 3
 //GSM Module TX pin to Arduino 2
 
@@ -87,7 +87,7 @@ void sendSmsGPS(String text)
 
 void makeCall() {
   Serial.begin(9600); //Baud rate of the GSM/GPRS Module
-  sim800.println("ATD+8801973421167;"); //Number to which you want to make call
+  sim800.println("ATD+88019xxxxxxxx;"); //Number to which you want to make call
   //sim800.print("ATD"+PHONE+";");
   delay(15000);
   sim800.println("ATH");
